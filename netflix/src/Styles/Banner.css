@@ -1,0 +1,12 @@
+.banner{
+    width: 100%;
+    height: 70%;
+    position: fixed;
+    background-color: black;
+    overflow: hidden;
+}
+
+.baner_background_img{
+    height: 20px;
+    width: 100%;
+}
