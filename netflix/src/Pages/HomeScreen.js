@@ -2,15 +2,28 @@ import React from 'react'
 import '../Styles/HomeScreen.css';
 import NavBar from '../Components/NavBar'
 import Banner from '../Components/Banner';
+import BannerBreaks from "../Components/BannerBreaks";
 
 function HomeScreen() {
   return (
     <div className='homeScreen'>
-        {/* Nav */}
         <NavBar/>
-        {/* Banner */}
+
         <Banner/>
-        {/* Row */}
+        
+        <BannerBreaks/>
+
+        <Banner/>
+
+        <BannerBreaks/>
+        
+        <Banner/>
+        
+        <BannerBreaks/>
+
+        <Banner/>
+
+        <BannerBreaks/>
     </div>
   )
 }

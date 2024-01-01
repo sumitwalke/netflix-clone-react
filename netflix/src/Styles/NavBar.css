@@ -1,9 +1,13 @@
 .navbar{
     width: 100%;
-    height: 6rem;
+    height: 5.5rem;
     position: fixed;
-    background-color: black;
     z-index: 1;
+    transition: ease-out 0.3s;
+}
+
+.navbar_black{
+    background-color: #111;
 }
 
 .nav_content{

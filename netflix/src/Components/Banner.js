@@ -3,8 +3,21 @@ import '../Styles/Banner.css'
 
 function Banner() {
   return (
-    <div className='banner'>
-        <img className="banner_background_img" src="https://assets.nflxext.com/ffe/siteui/vlv3/c31c3123-3df7-4359-8b8c-475bd2d9925d/15feb590-3d73-45e9-9e4a-2eb334c83921/IN-en-20231225-popsignuptwoweeks-perspective_alpha_website_large.jpg" alt="" srcset="" />
+    <div className='banner banner_1'>
+      <div className="banner_img_shadow">
+        <div className="subscription">
+          <div className='subscription_card'>
+            <div className="subscription_content">
+              <h3> Welcome Back!</h3>
+              <h1>Unlimited movies, TV shows and more</h1>
+              <h3>Watch anywhere. Cancel anytime.</h3>
+              <div className='subscription_button'>
+                <button className='subscribe_button'> Sign In </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
