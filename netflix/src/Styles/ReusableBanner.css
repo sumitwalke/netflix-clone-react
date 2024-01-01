@@ -1,0 +1,21 @@
+.reusable_banner{
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    padding: 4.5rem 0;
+}
+
+.reusable_banner_image{
+    margin: 2rem;
+    height: auto;
+    width: 50%;
+}
+
+.reusable_banner_content{
+    color: white;
+    font: larger;
+    margin: 2rem;
+    padding: 2rem;
+}

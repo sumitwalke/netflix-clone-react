@@ -3,7 +3,7 @@ import '../Styles/Banner.css'
 
 function Banner() {
   return (
-    <div className='banner banner_1'>
+    <div className='banner'>
       <div className="banner_img_shadow">
         <div className="subscription">
           <div className='subscription_card'>
