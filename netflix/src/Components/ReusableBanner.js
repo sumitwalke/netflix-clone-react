@@ -7,7 +7,7 @@ function ReusableBanner(props) {
 
   return (
     <div className='reusable_banner'>
-                <img className="reusable_banner_image" src={props.image}></img>
+                <img className="reusable_banner_image" src={props.image} alt=""></img>
             <div className="reusable_banner_content">
                 <div className="reusable_banner_title">
                 <h1>{props.title}</h1>
