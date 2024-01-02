@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import '../Styles/NavBar.css';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 function NavBar() {
   const [show,setShow] = useState(false);
@@ -24,12 +23,8 @@ function NavBar() {
   const[isLoggedIn, setIsLoggedIn] = useState(true);
 
   const toggleLogin = () => {
-      setIsLoggedIn(!isLoggedIn);
+    setIsLoggedIn((isLoggedIn) => !isLoggedIn);
   }
-
-  useEffect(()=>{
-    console.log(`${isLoggedIn}`);
-  }, [])
 
   return (
     <div className={`navbar ${show && `navbar_black`}`}>
@@ -40,14 +35,13 @@ function NavBar() {
                     <ul to="/home">Home</ul>
                     <ul to="/about">About</ul>
                     <ul to="/contact">Contact</ul>
-                    <button onClick={toggleLogin}>Logout</button>
                   </div>) : (
                     <div></div>
                   )}
+                  
             <div className="nav_account_handle">
-              <img className='nav_avatar' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt=""/>
-              <FontAwesomeIcon className='fontawesome-icon'icon="fa-solid fa-caret-down" />
-              <button onClick={()=>{setIsLoggedIn(!isLoggedIn)}}> {isLoggedIn ? "Login" : "Logout"} </button>
+              <img className='nav_avatar nav_actions' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt=""/>
+              <button className="login_logout_button nav_actions" onClick={toggleLogin}> {isLoggedIn ? "Login" : "Logout"}</button>
             </div>
             
         </div>

@@ -43,5 +43,9 @@
     color: white;
     font-size: large;
     border-radius: 0.3rem;
+    cursor: pointer;
+}
+.hero_button:hover{
+    background-color: #c1000a;
 }
 

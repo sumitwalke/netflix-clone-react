@@ -22,10 +22,31 @@
     cursor: pointer;
 }
 
+.navbar_menu ul{
+    color: white;
+}
+
+/* .nav_account_handle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 .nav_avatar{
-    position: fixed;
-    padding: 1.5rem 3rem;
+    margin: 1rem 3rem;
     height: 2.5rem;
     right: 0;
+    cursor: pointer;
+}
+
+.nav_actions{
+    /* margin: 2rem; */
+}
+
+.login_logout_button{
+    background-color: #E50914;
+    border: 0;
+    border-radius: 3px;
+    color: white;
     cursor: pointer;
 }
