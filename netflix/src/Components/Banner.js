@@ -12,7 +12,7 @@ function Banner() {
               <h1>Unlimited movies, TV shows and more</h1>
               <h3>Watch anywhere. Cancel anytime.</h3>
               <div className='subscription_button'>
-                <button className='subscribe_button'> Sign In </button>
+                <button className='subscribe_button'> Sign Up </button>
               </div>
             </div>
           </div>

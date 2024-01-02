@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import HomeScreen from './Pages/HomeScreen';
+import PreLoginPage from './Pages/PreLoginPage';
+import HomePage from './Pages/HomePage'
 
 function App() {
   return (
     <div className="App">
-      <HomeScreen/>
+      {/* <PreLoginPage/> */}
+      <HomePage/>
     </div>
   );
 }

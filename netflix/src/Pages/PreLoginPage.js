@@ -1,13 +1,13 @@
 import React from 'react'
-import '../Styles/HomeScreen.css';
+import '../Styles/PreLoginPage.css';
 import NavBar from '../Components/NavBar'
 import Banner from '../Components/Banner';
 import BannerBreaks from "../Components/BannerBreaks";
 import ReusableBanner from "../Components/ReusableBanner";
 
-function HomeScreen() {
+function PreLoginPage() {
   return (
-    <div className='homeScreen'>
+    <div className='pre_login_page'>
         <NavBar/>
 
         <Banner/>
@@ -50,4 +50,4 @@ function HomeScreen() {
   )
 }
 
-export default HomeScreen
+export default PreLoginPage

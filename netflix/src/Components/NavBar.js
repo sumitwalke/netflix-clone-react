@@ -21,12 +21,35 @@ function NavBar() {
     }
   }, []);
 
+  const[isLoggedIn, setIsLoggedIn] = useState(true);
+
+  const toggleLogin = () => {
+      setIsLoggedIn(!isLoggedIn);
+  }
+
+  useEffect(()=>{
+    console.log(`${isLoggedIn}`);
+  }, [])
+
   return (
     <div className={`navbar ${show && `navbar_black`}`}>
         <div className="nav_content">
             <img className='nav_logo' src="https://www.edigitalagency.com.au/wp-content/uploads/netflix-logo-png-large.png" alt=""/>
-            <img className='nav_avatar' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt=""/>
-            <FontAwesomeIcon icon="fa-solid fa-caret-down" />
+            {isLoggedIn ? (
+                  <div className="navbar-menu">
+                    <ul to="/home">Home</ul>
+                    <ul to="/about">About</ul>
+                    <ul to="/contact">Contact</ul>
+                    <button onClick={toggleLogin}>Logout</button>
+                  </div>) : (
+                    <div></div>
+                  )}
+            <div className="nav_account_handle">
+              <img className='nav_avatar' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt=""/>
+              <FontAwesomeIcon className='fontawesome-icon'icon="fa-solid fa-caret-down" />
+              <button onClick={()=>{setIsLoggedIn(!isLoggedIn)}}> {isLoggedIn ? "Login" : "Logout"} </button>
+            </div>
+            
         </div>
     </div>
   )

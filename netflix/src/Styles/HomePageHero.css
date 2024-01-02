@@ -1,5 +1,5 @@
-.banner{
-    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c31c3123-3df7-4359-8b8c-475bd2d9925d/15feb590-3d73-45e9-9e4a-2eb334c83921/IN-en-20231225-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+.hero{
+    background-image: url(https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQdn2KUDfayDzUbZNeLTCjLEcWhZqol1YNil57eohLWR9G-z1lYR9sAOPm3_WdTnVkCliVeJSkKcZ8P4M1pRyn_n3AJHoe-WXaIB4vTjeEgpkC-uUh65zjgzAkI4k9exfbNGKe33_uTAiKys5XkyLJLAqra4.jpg?r=7b3);
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -11,13 +11,13 @@
     justify-content: center;
 }
 
-.banner_img_shadow{
+.hero_img_shadow{
     width: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
 }
 
-.subscription{
-    display: flex;
+.hero_movie{
+    /* display: flex; */
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -25,18 +25,23 @@
     padding: 8rem;
 }
 
-.subscription_content{
+.hero_movie_content{
     color: white;
     font-size: large;
 }
 
-.subscribe_button{
-    background-color: 	#E50914;
+.hero_buttons{
+    margin: 2rem;
+}
+
+.hero_button{
+    background-color: #E50914;
     border: 0;
+    margin: 2rem;
     padding: 1rem 1.5rem;
-    width: 50%;
+    width: 25%;
     color: white;
     font-size: large;
     border-radius: 0.3rem;
-    cursor: pointer;
 }
+
