@@ -31,17 +31,18 @@ function NavBar() {
         <div className="nav_content">
             <img className='nav_logo' src="https://www.edigitalagency.com.au/wp-content/uploads/netflix-logo-png-large.png" alt=""/>
             {isLoggedIn ? (
-                  <div className="navbar-menu">
-                    <ul to="/home">Home</ul>
-                    <ul to="/about">About</ul>
-                    <ul to="/contact">Contact</ul>
+                  <div className="navbar_menu">
+                    <ul to="/tvShows">TV Shows</ul>
+                    <ul to="/movies">Movies</ul>
+                    <ul to="/recentlyAdded">Recently Added</ul>
+                    <ul to="/myList">My List</ul>
                   </div>) : (
                     <div></div>
                   )}
                   
             <div className="nav_account_handle">
               <img className='nav_avatar nav_actions' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt=""/>
-              <button className="login_logout_button nav_actions" onClick={toggleLogin}> {isLoggedIn ? "Login" : "Logout"}</button>
+              <button className="login_logout_button nav_actions" onClick={toggleLogin}> {isLoggedIn ? "Logout" : "Login"}</button>
             </div>
             
         </div>
