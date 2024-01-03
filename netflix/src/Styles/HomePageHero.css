@@ -12,8 +12,8 @@
 }
 
 .hero_img_shadow{
-    width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    /* width: 100%; */
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%); */
     /* background: linear-gradient(0.25turn, #000000, #ffffff00); */
 }
 
@@ -77,4 +77,11 @@
 .hero_mylist_button:hover{
     color: #111;
     background-color: white;
+}
+
+.hero_fade_bottom{
+    width: 100%;
+    background: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111
+    );
+    
 }

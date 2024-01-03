@@ -47,6 +47,7 @@ function HomePageHero() {
                 </div>
             </div>
           </div>
+          <div className='hero_fade_bottom'/>
         </div>
       )
     }

@@ -1,0 +1,12 @@
+.row{
+    margin: 2rem 5rem;
+}
+
+.row_title{
+    color: white;
+}
+
+.row_poster{
+    width: 20rem;
+    height: 20rem;
+}
