@@ -38,7 +38,7 @@ function HomePageHero() {
                     <h1>{movie?.name || movie?.title || movie?.original_name}</h1>
                   </div>
                   <div className="movie_description">
-                    <h3>{truncate(`${movie?.overview}`, 250)}</h3>
+                    <h3>{truncate(`${movie?.overview}`, 150)}</h3>
                   </div>
                   <div className='hero_buttons'>
                     <button className='hero_button hero_play_button'> Play</button>
